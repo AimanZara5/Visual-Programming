@@ -1,0 +1,7 @@
+using system
+namespace Hellop{
+class ABC{
+static void Main(String[]args){
+Console.WriteLine("Hello world");
+Console.WriteLine("Welcome to my csharp first program");
+}}}
