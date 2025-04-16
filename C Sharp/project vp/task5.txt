@@ -1,0 +1,33 @@
+using System; 
+
+namespace ABC
+{
+    class Program
+    {
+        // Global variable (declared outside all methods, with data type)
+         int globalNumber = 100;
+
+       public static void Main(string[] args)
+        {
+            // Local variable (declared inside a method, with data type)
+            int localNumber = 50;
+
+            // Displaying values
+            Console.WriteLine("Local Variable: " + localNumber);
+            Console.WriteLine("Global Variable before update: " + globalNumber);
+
+            // Calling method to update global variable
+            UpdateGlobalNumber();
+
+            // Displaying global variable after update
+            Console.WriteLine("Global Variable after update: " + globalNumber);
+        }
+S
+        // Method to update global variable
+        static void UpdateGlobalNumber()
+        {
+            // Adding 10 to global variable
+            globalNumber = globalNumber + 10;
+        }
+    }
+}
